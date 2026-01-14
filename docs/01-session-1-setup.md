@@ -343,43 +343,20 @@ Forking creates your own copy of the tutorial repository on GitHub.
 
 ### 3.2 Clone Your Fork Locally
 
-Cloning downloads the repository to your computer.
+Cloning downloads the repository to your computer. Cursor has a built-in feature that makes this easy.
 
 **Steps:**
 
-1. On your forked repository page, click the green **Code** button
+1. On your forked repository page on GitHub, click the green **Code** button
 2. Make sure **HTTPS** is selected
 3. Copy the URL (it looks like `https://github.com/[your-username]/ai-dev-workflow-tutorial.git`)
 4. Open Cursor
-5. Open the terminal (`` Ctrl+` ``)
-6. Navigate to where you want to store projects:
-
-   **macOS:**
-   ```bash
-   cd ~/Documents
-   ```
-
-   **Windows:**
-   ```bash
-   cd C:\Users\YourName\Documents
-   ```
-
-7. Clone the repository:
-   ```bash
-   git clone https://github.com/[your-username]/ai-dev-workflow-tutorial.git
-   ```
-
-8. Navigate into the project:
-   ```bash
-   cd ai-dev-workflow-tutorial
-   ```
-
-9. Open the project in Cursor:
-   ```bash
-   cursor .
-   ```
-
-   Or use **File** → **Open Folder** and select the `ai-dev-workflow-tutorial` folder.
+5. Go to **File** → **New Window**
+6. In the new window, click **Clone Repository** (or press `Ctrl+Shift+P` and type "Clone")
+7. Paste the repository URL you copied from GitHub
+8. Choose a location to save the project (e.g., Documents folder)
+9. Click **Clone** and wait for the download to complete
+10. When prompted, click **Open** to open the cloned repository
 
 **Checkpoint:** You can see the tutorial files in Cursor's file explorer (left sidebar).
 
