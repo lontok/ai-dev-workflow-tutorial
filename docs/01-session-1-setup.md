@@ -140,8 +140,6 @@ Claude Pro gives you access to Claude Code, the AI assistant you will use throug
 
 ## 2. Install Software
 
-**Note:** All commands in this section should be run in Cursor's terminal. See [Opening the Terminal in Cursor](#opening-the-terminal-in-cursor) below if you need help finding it.
-
 ### 2.1 Install Cursor
 
 Cursor is an AI-powered code editor based on VS Code. It will feel familiar if you have used VS Code before.
@@ -194,6 +192,8 @@ Many of the following steps require running commands in the terminal. Here's how
 ```
 
 **Tip:** You can resize the terminal by dragging the divider between the terminal and the editor area.
+
+**Note:** All commands in the following sections should be run in Cursor's terminal.
 
 ---
 
