@@ -2,6 +2,30 @@
 
 This session covers account creation, tool installation, and initial configuration. By the end, you will have a complete development environment ready for the workflow in Session 2.
 
+## Table of Contents
+
+- [1. Create Accounts](#1-create-accounts)
+  - [1.1 Create a GitHub Account](#11-create-a-github-account)
+  - [1.2 Create an Atlassian (Jira) Account](#12-create-an-atlassian-jira-account)
+  - [1.3 Subscribe to Claude Pro](#13-subscribe-to-claude-pro)
+- [2. Install Software](#2-install-software)
+  - [2.1 Install Cursor](#21-install-cursor)
+  - [2.2 Install Git](#22-install-git)
+  - [2.3 Install Python 3.11+](#23-install-python-311)
+  - [2.4 Install uv](#24-install-uv)
+  - [2.5 Install spec-kit](#25-install-spec-kit)
+  - [2.6 Install Claude Code](#26-install-claude-code)
+- [3. Fork and Clone the Tutorial Repository](#3-fork-and-clone-the-tutorial-repository)
+  - [3.1 Fork the Repository](#31-fork-the-repository)
+  - [3.2 Clone Your Fork Locally](#32-clone-your-fork-locally)
+- [4. Create Jira Project](#4-create-jira-project)
+- [5. Connect GitHub and Jira](#5-connect-github-and-jira)
+- [6. Session 1 Verification](#6-session-1-verification)
+- [Common Issues](#common-issues)
+- [What's Next](#whats-next)
+
+---
+
 ## What You Will Accomplish
 
 ```
