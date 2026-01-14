@@ -189,9 +189,11 @@ When you see the "Review Settings" screen:
 
 Once you finish the onboarding in the browser, return to the Cursor desktop app and click **Log In**.
 
+On the "Preferences" screen, accept the defaults and click **Continue**. Continue through any remaining onboarding screens.
+
 If you already have a Cursor account, sign in instead.
 
-**Checkpoint:** You should be able to open Cursor and see the welcome screen or an empty editor.
+**Checkpoint:** You should see the Cursor welcome screen with three options: **Open project**, **Clone repo**, and **Connect via SSH**.
 
 ---
 
