@@ -243,12 +243,11 @@ If you see a version number (e.g., `git version 2.39.0`), Git is installed. Skip
 
 **Install Git on macOS:**
 
-1. Open Cursor's terminal (`` Ctrl+` ``)
-2. Type `git --version`
-3. If Git is not installed, macOS will prompt you to install Command Line Tools
-4. Click **Install** on the prompt
-5. Wait for installation to complete
-6. Verify by running `git --version` again
+1. Type `git --version` in the terminal
+2. If Git is not installed, macOS will prompt you to install Command Line Tools
+3. Click **Install** on the prompt
+4. Wait for installation to complete
+5. Verify by running `git --version` again
 
 **Alternative for macOS (if the above doesn't work):**
 
