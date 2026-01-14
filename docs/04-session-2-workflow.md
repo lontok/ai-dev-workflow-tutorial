@@ -76,6 +76,8 @@ This session covers the complete development workflow: from connecting Claude Co
    claude mcp add --transport sse atlassian https://mcp.atlassian.com/v1/sse
    ```
 
+   (The `--transport sse` part specifies how Claude communicates with Atlassian's server — you don't need to understand the technical details, just include it as shown.)
+
 4. A browser window will open for authentication
 5. Log in with your Atlassian account
 6. Authorize Claude Code to access your Jira workspace
@@ -179,7 +181,7 @@ The constitution establishes principles and guidelines for your project. It ensu
 
 ### 2.3 Create the Specification
 
-The specification refines the PRD into detailed, actionable requirements.
+The specification refines the PRD (Product Requirements Document — the document in `prd/ecommerce-analytics.md` that describes what we want to build) into detailed, actionable requirements.
 
 **Steps:**
 
@@ -191,6 +193,7 @@ The specification refines the PRD into detailed, actionable requirements.
 
    The dashboard should have:
    - 2 KPI cards at the top (Total Sales, Total Orders)
+     (KPI = Key Performance Indicator, a metric that shows important business data at a glance)
    - A line chart showing sales trend over time
    - A bar chart showing sales by category
    - A bar chart showing sales by region
@@ -342,7 +345,9 @@ Now create a Git branch for your work. This keeps your changes isolated from the
 
 ## 5. Build the Dashboard with Claude Code
 
-Now you will build the Streamlit dashboard using Claude Code as your AI assistant.
+Now you will build the dashboard using Claude Code as your AI assistant.
+
+**What is Streamlit?** Streamlit is a Python library that makes it easy to create web-based dashboards and data apps. Instead of writing HTML, CSS, and JavaScript, you write Python code and Streamlit turns it into a web page. It's popular for data visualization because you can go from data to dashboard quickly.
 
 ### 5.1 Set Up Python Environment
 
@@ -473,6 +478,8 @@ Now save your work with a Git commit.
 
 2. Check the `.gitignore` file — make sure `venv/` is listed (you don't want to commit the virtual environment).
 
+   **What is .gitignore?** This file tells Git which files and folders to ignore and NOT track. The `venv/` folder contains installed packages that can be recreated from `requirements.txt`, so we don't need to store it in Git.
+
    If `venv/` is not in `.gitignore`, add it:
    ```bash
    echo "venv/" >> .gitignore
@@ -569,6 +576,9 @@ Now push your changes to GitHub and create a pull request.
 
      Resolves ECOM-1
      ```
+
+   **Note:** "Resolves ECOM-1" is a special keyword that tells GitHub and Jira this pull request completes the ECOM-1 task. When the PR is merged, Jira can automatically update the issue status.
+
 5. Verify the base branch is `main` and the compare branch is your feature branch
 6. Click **Create pull request**
 
