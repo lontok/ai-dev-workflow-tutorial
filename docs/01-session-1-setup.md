@@ -337,11 +337,7 @@ uv is a fast Python package manager that spec-kit requires.
 curl -LsSf https://astral.sh/uv/install.sh | sh
 ```
 
-After installation, restart your terminal or run:
-
-```bash
-source $HOME/.local/bin/env
-```
+After installation, close and reopen the terminal (Terminal → New Terminal).
 
 **Install uv on Windows:**
 
