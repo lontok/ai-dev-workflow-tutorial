@@ -22,26 +22,27 @@ Consider what AI-assisted building enables:
 | Learn frameworks by reading documentation | AI teaches you as you build |
 | Work alone, limited by your knowledge | AI as a knowledgeable partner |
 
-### The Professional Workflow You Will Master
+### The Workflow You Will Master
 
 Every technology company — from startups to Google, Meta, and Microsoft — uses a variation of this workflow:
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│                  Industry-Standard Workflow                  │
+│                  AI-Assisted Building Workflow               │
 ├─────────────────────────────────────────────────────────────┤
 │                                                             │
 │  1. Requirements      → What are we building and why?       │
 │  2. Task Tracking     → Break work into trackable pieces    │
 │  3. Version Control   → Manage code changes safely          │
-│  4. Feature Branches  → Work without breaking production    │
-│  5. Pull Requests     → Review before merging               │
-│  6. Continuous Merge  → Integrate changes frequently        │
+│  4. AI-Assisted Code  → Build with Claude Code as partner   │
+│  5. Deploy & Share    → Make your work accessible           │
 │                                                             │
 └─────────────────────────────────────────────────────────────┘
 ```
 
-In interviews, you will be asked about Git, pull requests, and collaborative workflows. This tutorial gives you hands-on experience — not just theoretical knowledge.
+In interviews, you will be asked about Git and collaborative workflows. This tutorial gives you hands-on experience — not just theoretical knowledge.
+
+> **Note:** Full branching and pull request workflows are introduced in capstone projects. This tutorial focuses on the core skills: building with AI assistance, version control basics, and deploying your work.
 
 ### What Makes This Tutorial Different
 
@@ -58,7 +59,7 @@ These are not "student skills" — these are professional skills that set you ap
 
 ## Objective
 
-This tutorial establishes a complete, end-to-end, AI-assisted workflow for building technology solutions that mirrors industry practice. By the end, you will be able to move from a tracked task to a merged, production-ready solution using Cursor, Claude Code, GitHub, and Jira with explicit integrations and traceability.
+This tutorial establishes a complete, end-to-end, AI-assisted workflow for building technology solutions. By the end, you will be able to move from a tracked task to a deployed, shareable solution using Cursor, Claude Code, GitHub, and Jira with explicit integrations and traceability.
 
 ## What You Will Build
 
@@ -99,14 +100,14 @@ The dashboard itself is just the vehicle. The real learning is the **process** y
 ├─────────────────────────────────────────────────────────────────────────┤
 │                                                                         │
 │   ┌─────────┐     ┌──────────┐     ┌─────────┐     ┌────────┐          │
-│   │   PRD   │ ──► │ spec-kit │ ──► │  Jira   │ ──► │ Branch │          │
-│   │(written)│     │(Claude)  │     │(tracking)│     │(Git)   │          │
+│   │   PRD   │ ──► │ spec-kit │ ──► │  Jira   │ ──► │  Code  │          │
+│   │(written)│     │(Claude)  │     │(tracking)│     │(Claude)│          │
 │   └─────────┘     └──────────┘     └─────────┘     └────────┘          │
 │                                                          │              │
 │                                                          ▼              │
 │   ┌─────────┐     ┌──────────┐     ┌─────────┐     ┌────────┐          │
-│   │  Merge  │ ◄── │    PR    │ ◄── │ Commit  │ ◄── │  Code  │          │
-│   │(GitHub) │     │(GitHub)  │     │(Git)    │     │(Claude)│          │
+│   │  Live!  │ ◄── │  Deploy  │ ◄── │  Push   │ ◄── │ Commit │          │
+│   │(public) │     │(Streamlit)│     │(GitHub) │     │(Git)   │          │
 │   └─────────┘     └──────────┘     └─────────┘     └────────┘          │
 │                                                                         │
 │   Legend: (tool) = primary tool used for this step                      │
@@ -119,11 +120,10 @@ The dashboard itself is just the vehicle. The real learning is the **process** y
 1. **PRD (Product Requirements Document)**: Start with a written specification of what to build
 2. **spec-kit**: Use AI-assisted tools to refine requirements into a technical plan
 3. **Jira**: Create trackable tasks from the plan
-4. **Branch**: Create an isolated workspace for your changes
-5. **Code**: Build the feature using Claude Code assistance
-6. **Commit**: Save your changes with a meaningful message
-7. **PR (Pull Request)**: Request review of your changes
-8. **Merge**: Integrate your changes into the main codebase
+4. **Code**: Build the feature using Claude Code assistance
+5. **Commit**: Save your changes with a meaningful message
+6. **Push**: Upload your code to GitHub
+7. **Deploy**: Make your dashboard publicly accessible on Streamlit Community Cloud
 
 ## Key Concepts
 
@@ -134,20 +134,18 @@ Every piece of code can be traced back to a requirement:
 ```
 Jira Issue: ECOM-1 "Create sales dashboard"
      ↓
-Branch: feature/ECOM-1-add-sales-dashboard
-     ↓
 Commit: "ECOM-1: add sales dashboard with KPIs and charts"
      ↓
-Pull Request: Links to ECOM-1, shows all changes
+Push: Code is now on GitHub, linked to Jira
      ↓
-Merge: Code is now in main, Jira issue can be closed
+Deploy: Dashboard is live and shareable
 ```
 
 **Why this matters in your career:**
 - When something breaks, you can find out exactly when and why
 - Project managers can track progress by looking at linked commits
 - New team members can understand why code exists
-- Auditors and compliance teams can verify what was built and when
+- Anyone can verify what was built and when
 
 ### Spec-Driven Development
 
@@ -212,8 +210,9 @@ By the end of Session 2, you will have:
 - Atlassian MCP server connected to Claude Code
 - Spec-kit constitution, specification, and plan created
 - Jira issue created from spec-kit tasks
-- Feature branch with Streamlit dashboard code
-- Pull request created and merged
+- Streamlit dashboard built and committed
+- Code pushed to GitHub
+- Dashboard deployed to Streamlit Community Cloud
 
 ## Completion Checklist
 
@@ -240,11 +239,10 @@ Use this checklist to verify your tutorial is complete:
 - [ ] spec-kit plan created
 - [ ] spec-kit tasks generated
 - [ ] Jira issue created (ECOM-1)
-- [ ] Feature branch created
 - [ ] Streamlit dashboard built
 - [ ] Changes committed with Jira key
-- [ ] Pull request created
-- [ ] Pull request merged
+- [ ] Code pushed to GitHub
+- [ ] Dashboard deployed to Streamlit Community Cloud
 
 ## After This Tutorial
 

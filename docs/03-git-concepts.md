@@ -74,30 +74,6 @@ Each commit has:
 
 ---
 
-### Branch
-
-A **branch** is an independent line of development. It lets you work on features without affecting the main code.
-
-```
-                    feature/add-login
-                    ┌─── C4 ─── C5
-                   ╱
-main: C1 ─── C2 ─── C3 ─── C6 ─── C7
-                            ╲
-                             └─── C8
-                             feature/fix-bug
-```
-
-- **main** (or **master**): The primary branch with stable code
-- **feature branches**: Separate lines for new features or fixes
-
-**Why branches?**
-- Work on features without breaking the main code
-- Multiple people can work on different features simultaneously
-- Easy to abandon a feature if it doesn't work out
-
----
-
 ### Clone
 
 **Cloning** creates a local copy of a remote repository.
@@ -135,8 +111,7 @@ A **fork** is your personal copy of someone else's repository on GitHub.
 1. Fork a repository (creates your copy on GitHub)
 2. Clone your fork (downloads to your computer)
 3. Make changes locally
-4. Push changes to your fork
-5. Create a pull request to the original repository
+4. Commit and push changes to your fork
 
 ---
 
@@ -178,71 +153,13 @@ Communication between your local repository and the remote:
 - **Push:** Send your local commits to the remote
 - **Pull:** Get changes from the remote to your local repository
 
----
-
-### Pull Request (PR)
-
-A **pull request** is a proposal to merge changes from one branch into another. It's how code review happens on GitHub.
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│                      Pull Request                           │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  From: feature/ECOM-1-add-dashboard                         │
-│  To:   main                                                 │
-│                                                             │
-│  Title: "Add sales dashboard with KPIs and charts"          │
-│                                                             │
-│  Changes:                                                   │
-│  + app.py (new file)                                        │
-│  + requirements.txt (new file)                              │
-│                                                             │
-│  [Review] [Approve] [Merge]                                 │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-**Pull Request workflow:**
-1. Create a feature branch
-2. Make commits on the branch
-3. Push the branch to GitHub
-4. Open a pull request
-5. Review and discuss changes
-6. Merge when approved
-
----
-
-### Merge
-
-**Merging** combines changes from one branch into another.
-
-```
-Before merge:
-                    feature/add-login
-                    ┌─── C4 ─── C5
-                   ╱
-main: C1 ─── C2 ─── C3
-
-After merge:
-                    feature/add-login
-                    ┌─── C4 ─── C5 ──┐
-                   ╱                  ╲
-main: C1 ─── C2 ─── C3 ──────────────── M (merge commit)
-```
-
-After merging a pull request:
-- Changes from the feature branch are now in main
-- The feature branch can be deleted
-- The project history shows where the branches joined
-
 ## The Git Workflow
 
 Here's how all these concepts fit together:
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│                    Complete Git Workflow                     │
+│                    Git Workflow for This Tutorial            │
 └─────────────────────────────────────────────────────────────┘
 
 1. FORK (on GitHub)
@@ -251,27 +168,20 @@ Here's how all these concepts fit together:
 2. CLONE (to your computer)
    Your fork → Local copy
 
-3. BRANCH (create workspace)
-   main → feature/ECOM-1-description
-
-4. EDIT (make changes)
+3. EDIT (make changes)
    Modify files in your working directory
 
-5. STAGE (prepare changes)
+4. STAGE (prepare changes)
    git add → Staging area
 
-6. COMMIT (save snapshot)
+5. COMMIT (save snapshot)
    git commit → Local repository
 
-7. PUSH (upload changes)
+6. PUSH (upload changes)
    Local → Your fork on GitHub
-
-8. PULL REQUEST (propose merge)
-   Your branch → main branch
-
-9. MERGE (integrate changes)
-   Feature branch → main
 ```
+
+> **Note:** Professional teams often use additional steps like branching and pull requests for code review. You'll learn these in your capstone projects.
 
 ## Common Git Commands
 
@@ -279,29 +189,27 @@ Here's how all these concepts fit together:
 |---------|---------|
 | `git clone URL` | Download a repository |
 | `git status` | See current state |
-| `git branch` | List branches |
-| `git checkout -b name` | Create and switch to new branch |
 | `git add .` | Stage all changes |
 | `git commit -m "message"` | Create a commit |
 | `git push` | Upload to remote |
 | `git pull` | Download from remote |
 
-You don't need to memorize these now — we'll use them step-by-step in the tutorial.
+You don't need to memorize these now — Claude Code will help you with Git commands during the tutorial.
 
 ## Connecting to Jira
 
-When you use a Jira issue key in your branch names and commit messages, Git and Jira can connect:
+When you use a Jira issue key in your commit messages, Git and Jira can connect:
 
 ```
 Jira Issue: ECOM-1 "Create sales dashboard"
                 ↓
-Branch: feature/ECOM-1-add-sales-dashboard
-                ↓
 Commit: "ECOM-1: implement KPI scorecards"
+                ↓
+Push to GitHub
                 ↓
 GitHub sees ECOM-1 and links to Jira
                 ↓
-Jira shows the commits and pull request
+Jira shows the commits on the issue
 ```
 
 This **traceability** is valuable because:
@@ -343,17 +251,16 @@ This **traceability** is valuable because:
 
 1. **Repository:** A project folder tracked by Git
 2. **Commit:** A snapshot of your project at a point in time
-3. **Branch:** An independent line of development
-4. **Fork:** Your copy of a repository on GitHub
-5. **Clone:** Your local copy of a repository
-6. **Push/Pull:** Sync between local and remote
-7. **Pull Request:** A proposal to merge changes
+3. **Fork:** Your copy of a repository on GitHub
+4. **Clone:** Your local copy of a repository
+5. **Push/Pull:** Sync between local and remote
+6. **Staging Area:** Changes ready to be committed
 
-## Practice Exercises (Optional)
+## Practice Exercise (Optional)
 
-Before starting Session 2, try these exercises to get comfortable with Git commands. Use the tutorial repository you cloned in Session 1.
+Before starting Session 2, try this exercise to verify your Git setup. Use the tutorial repository you cloned in Session 1.
 
-### Exercise 1: Check Repository Status
+### Check Repository Status
 
 ```bash
 git status
@@ -361,38 +268,7 @@ git status
 
 **What you should see:** A message saying "On branch main" and "nothing to commit, working tree clean" (or similar).
 
-### Exercise 2: Create a Practice Branch
-
-```bash
-git checkout -b practice/my-test-branch
-```
-
-**What you should see:** "Switched to a new branch 'practice/my-test-branch'"
-
-Verify with:
-```bash
-git branch
-```
-
-You should see `practice/my-test-branch` with an asterisk (*) next to it.
-
-### Exercise 3: Switch Back to Main
-
-```bash
-git checkout main
-```
-
-**What you should see:** "Switched to branch 'main'"
-
-### Exercise 4: Delete the Practice Branch
-
-```bash
-git branch -d practice/my-test-branch
-```
-
-**What you should see:** "Deleted branch practice/my-test-branch"
-
-**Congratulations!** You've practiced the basic Git commands you'll use in Session 2.
+This confirms Git is working correctly and your repository is ready for Session 2.
 
 ## Next Steps
 

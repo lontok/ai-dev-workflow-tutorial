@@ -281,14 +281,14 @@ If multiple matches exist, press `Tab` twice to see options.
 
 ### Tab Completion with Git
 
-Tab completion also works with Git commands and branch names:
+Tab completion also works with Git commands:
 
 ```bash
-git checkout feat[TAB]
-# Completes to: git checkout feature/ECOM-1-add-sales-dashboard
+git sta[TAB]
+# Completes to: git status
 ```
 
-**Tip:** When working with long branch names like `feature/ECOM-1-add-sales-dashboard`, always use Tab completion instead of typing the full name. This prevents typos that cause errors.
+**Tip:** Use Tab completion for Git commands to save time and prevent typos.
 
 ## Command History
 

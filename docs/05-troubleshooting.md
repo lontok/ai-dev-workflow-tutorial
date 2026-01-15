@@ -24,9 +24,10 @@ This guide covers common issues you may encounter and how to resolve them. Remem
   - ["Not a git repository"](#not-a-git-repository)
   - [Git asks for password repeatedly](#git-asks-for-password-repeatedly)
   - ["Your branch is behind"](#your-branch-is-behind)
-  - [Accidentally committed to main](#accidentally-committed-to-main)
 - [GitHub Issues](#github-issues)
   - [Can't push — "Permission denied"](#cant-push--permission-denied)
+- [Advanced Git Issues (Capstone)](#advanced-git-issues-capstone)
+  - [Accidentally committed to main](#accidentally-committed-to-main)
   - [Pull request can't be merged — conflicts](#pull-request-cant-be-merged--conflicts)
 - [Jira Issues](#jira-issues)
   - [Can't create project — "Key already exists"](#cant-create-project--key-already-exists)
@@ -204,30 +205,6 @@ If you have local changes that conflict, Git will tell you. Ask Claude Code for 
 
 ---
 
-### Accidentally committed to main
-
-**Symptoms:**
-- You made commits directly to `main` instead of a feature branch
-
-**Solution:**
-
-If you haven't pushed yet:
-```bash
-# Create a new branch with your commits
-git branch feature/ECOM-1-my-feature
-
-# Reset main to match remote
-git checkout main
-git reset --hard origin/main
-
-# Switch to your feature branch
-git checkout feature/ECOM-1-my-feature
-```
-
-If you already pushed, ask Claude Code for help — the solution depends on your specific situation.
-
----
-
 ## GitHub Issues
 
 ### Can't push — "Permission denied"
@@ -257,6 +234,10 @@ fatal: unable to access 'https://github.com/...'
 
 ---
 
+## Advanced Git Issues (Capstone)
+
+These issues relate to branching and pull requests, which you'll use in your capstone projects.
+
 ### Pull request can't be merged — conflicts
 
 **Symptoms:**
@@ -284,6 +265,30 @@ fatal: unable to access 'https://github.com/...'
 
 ---
 
+### Accidentally committed to main
+
+**Symptoms:**
+- You made commits directly to `main` instead of a feature branch
+
+**Solution:**
+
+If you haven't pushed yet:
+```bash
+# Create a new branch with your commits
+git branch feature/ECOM-1-my-feature
+
+# Reset main to match remote
+git checkout main
+git reset --hard origin/main
+
+# Switch to your feature branch
+git checkout feature/ECOM-1-my-feature
+```
+
+If you already pushed, ask Claude Code for help — the solution depends on your specific situation.
+
+---
+
 ## Jira Issues
 
 ### Can't create project — "Key already exists"
@@ -293,7 +298,7 @@ fatal: unable to access 'https://github.com/...'
 
 **Solution:**
 - Choose a different project key (e.g., ECOM2, MYECOM)
-- Update your branch naming to match the new key
+- Update your commit messages to use the new key
 
 ---
 
@@ -532,9 +537,9 @@ Before diving deep:
 ### Use `git status` frequently
 
 `git status` tells you:
-- What branch you are on
 - What files have changed
 - What is staged for commit
+- Whether you have commits to push
 
 If you are unsure what state your repository is in, start with `git status`.
 

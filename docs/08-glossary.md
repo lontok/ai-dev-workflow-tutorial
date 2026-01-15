@@ -8,16 +8,12 @@ A reference guide to key terms used in this tutorial.
 
 | Term | Definition |
 |------|------------|
-| **Branch** | An independent line of development. Allows you to work on features without affecting the main code. |
 | **Clone** | Creating a local copy of a remote repository on your computer. |
 | **Commit** | A snapshot of your project at a specific moment, like a "save point." |
 | **Fork** | Your personal copy of someone else's repository on GitHub. |
 | **Git** | Version control software that tracks changes to files over time. |
 | **GitHub** | A website that hosts Git repositories in the cloud and enables collaboration. |
-| **Main branch** | The primary branch containing stable, production-ready code (sometimes called "master"). |
-| **Merge** | Combining changes from one branch into another. |
 | **Pull** | Downloading changes from a remote repository to your local copy. |
-| **Pull Request (PR)** | A proposal to merge changes from one branch into another, enabling code review. |
 | **Push** | Uploading your local commits to a remote repository. |
 | **Repository (Repo)** | A project folder tracked by Git, containing files and complete history. |
 | **Staging Area** | A holding area for changes you want to include in your next commit. |
@@ -97,13 +93,10 @@ A reference guide to key terms used in this tutorial.
 
 | Term | Definition |
 |------|------------|
-| **Code Review** | The process of examining code changes before they are merged, usually via pull request. |
 | **Deployment** | Releasing software to a server where users can access it. |
-| **Feature Branch** | A branch created specifically for developing a new feature. |
 | **Local** | On your computer (as opposed to "remote" which is on a server). |
-| **Production** | The live environment where real users access your software. |
 | **Remote** | On a server (e.g., GitHub), not on your local computer. |
-| **SSE** | Server-Sent Events — a technology for servers to push updates to clients. Used by MCP. |
+| **Streamlit Community Cloud** | A free hosting service for Streamlit apps, making dashboards publicly accessible. |
 
 ---
 
@@ -113,7 +106,7 @@ A reference guide to key terms used in this tutorial.
 - Claude Code, Cursor, Git, GitHub, Jira, CLI, Terminal, Fork, Clone, MCP
 
 ### Session 2: Workflow
-- Branch, Commit, Push, Pull Request, Merge, spec-kit, PRD, KPI, Streamlit, Virtual Environment
+- Commit, Push, spec-kit, PRD, KPI, Streamlit, Virtual Environment, Deployment, Streamlit Community Cloud
 
 ### Troubleshooting
 - Path, .gitignore, pip, Virtual Environment, Staging Area

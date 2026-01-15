@@ -472,7 +472,7 @@ Cloning downloads the repository to your computer. Cursor has a built-in feature
 
 ### 4.1 Install GitHub for Jira
 
-This integration connects your GitHub commits and pull requests to Jira issues.
+This integration connects your GitHub commits to Jira issues, providing full traceability.
 
 **Steps:**
 
@@ -611,5 +611,5 @@ In [Session 2](04-session-2-workflow.md), you will:
 2. Use spec-kit to create a specification and plan
 3. Create a Jira issue
 4. Build a Streamlit dashboard with Claude Code
-5. Commit, create a PR, and merge
+5. Commit, push, and deploy to Streamlit Community Cloud
 

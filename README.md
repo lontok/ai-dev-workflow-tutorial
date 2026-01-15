@@ -4,11 +4,11 @@ A hands-on tutorial for establishing a complete, end-to-end, AI-assisted workflo
 
 ```
 ┌─────────┐    ┌──────────┐    ┌─────────┐    ┌────────┐
-│   PRD   │ →  │ spec-kit │ →  │  Jira   │ →  │ Branch │
+│   PRD   │ →  │ spec-kit │ →  │  Jira   │ →  │  Code  │
 └─────────┘    └──────────┘    └─────────┘    └────────┘
                                                   ↓
 ┌─────────┐    ┌──────────┐    ┌─────────┐    ┌────────┐
-│  Merge  │ ←  │    PR    │ ←  │ Commit  │ ←  │  Code  │
+│  Live!  │ ←  │  Deploy  │ ←  │  Push   │ ←  │ Commit │
 └─────────┘    └──────────┘    └─────────┘    └────────┘
 ```
 
@@ -55,8 +55,7 @@ Every successful team building technology solutions follows a structured workflo
 The workflow you learn in this tutorial is used at companies from startups to Fortune 500:
 - **GitHub** for version control (used by 100M+ developers and teams)
 - **Jira** for task tracking (used by 65K+ companies)
-- **Pull requests** for review and collaboration (industry standard)
-- **Branch-based development** (universal practice)
+- **Streamlit Community Cloud** for deployment (free hosting for data apps)
 
 ### Your Competitive Advantage
 
@@ -75,9 +74,9 @@ These are not "student skills" — these are professional skills that will set y
 
 By the end of this tutorial, you will be able to:
 
-- Move from a tracked task to a merged, production-ready solution
+- Move from a tracked task to a deployed, shareable solution
 - Use Claude Code as a thinking and implementation assistant
-- Maintain full traceability: Jira issue → branch → commit → PR → merge
+- Maintain full traceability: Jira issue → commit → push → deploy
 - Apply spec-driven development using GitHub's spec-kit
 
 ## Tutorial Structure
@@ -141,14 +140,13 @@ No prior experience with Git, Jira, or AI tools is required. You should have:
 
 ## Naming Conventions
 
-This tutorial uses consistent naming conventions (kebab-case):
+This tutorial uses consistent naming conventions:
 
 | Item | Convention | Example |
 |------|------------|---------|
 | Jira Project Key | UPPERCASE | `ECOM` |
 | Jira Issue | KEY-NUMBER | `ECOM-1` |
-| Branch | feature/KEY-NUMBER-description | `feature/ECOM-1-add-sales-dashboard` |
-| Commit | KEY-NUMBER: description | `ECOM-1: add sales dashboard` |
+| Commit Message | KEY-NUMBER: description | `ECOM-1: add sales dashboard` |
 
 ## Getting Help
 

@@ -4,7 +4,7 @@
 
 ### What is the purpose of this tutorial?
 
-This tutorial teaches you a complete, industry-standard workflow for building technology solutions using modern AI tools. You will learn how professional teams go from requirements to shipped solutions with full traceability.
+This tutorial teaches you a complete, AI-assisted workflow for building technology solutions using modern tools. You will learn how to go from requirements to deployed, shareable solutions with full traceability.
 
 ### Do I need prior experience with these tools?
 
@@ -51,23 +51,6 @@ Claude Code specifically requires a Claude Pro subscription. For the capstone, t
 - **GitHub** is a website that hosts Git repositories in the cloud
 
 You use Git to manage your code locally, and GitHub to share it with others.
-
-### Why do we use branches?
-
-Branches let you work on features without affecting the main codebase. This means:
-- Your incomplete work doesn't break things for others
-- You can experiment safely
-- Multiple people can work on different features simultaneously
-
-### What if I forget to create a branch before making changes?
-
-If you haven't committed yet, run in the terminal:
-```bash
-# Create branch and switch to it — your changes come with you
-git checkout -b feature/ECOM-1-my-feature
-```
-
-If you already committed to main, see the Troubleshooting guide for recovery steps.
 
 ### How often should I commit?
 
@@ -287,20 +270,12 @@ Options:
 
 The best approach depends on your team and project.
 
-### What if my teammate and I have merge conflicts?
+### How do we avoid conflicts when working together?
 
 1. Communicate — "I'm working on file X"
-2. Pull frequently — `git pull origin main`
-3. Merge main into your branch before PR
-4. Ask Claude for help resolving conflicts
-
-### How do we handle code reviews?
-
-- Be respectful and constructive
-- Focus on the code, not the person
-- Explain why, not just what
-- Respond to all comments
-- Don't let PRs sit unreviewed for days
+2. Pull frequently — `git pull` before starting work
+3. Commit and push often so changes are visible to the team
+4. Ask Claude for help if you encounter issues
 
 ---
 
