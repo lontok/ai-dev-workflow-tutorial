@@ -143,10 +143,10 @@ data/sales-data.csv      # Source data (already exists)
 
 **Purpose**: Final validation and quality assurance
 
-- [ ] T030 Verify dashboard loads within 5 seconds (FR-012)
-- [ ] T031 Verify all chart labels are clear and professional (FR-011, SC-007)
-- [ ] T032 Verify top category and region identifiable within 10 seconds (SC-005)
-- [ ] T033 Run complete verification checklist from plan.md
+- [x] T030 Verify dashboard loads within 5 seconds (FR-012)
+- [x] T031 Verify all chart labels are clear and professional (FR-011, SC-007)
+- [x] T032 Verify top category and region identifiable within 10 seconds (SC-005)
+- [x] T033 Run complete verification checklist from plan.md
 
 ---
 
