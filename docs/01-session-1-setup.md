@@ -19,6 +19,7 @@ This session covers account creation, tool installation, and initial configurati
 - [3. Fork and Clone the Tutorial Repository](#3-fork-and-clone-the-tutorial-repository)
   - [3.1 Fork the Repository](#31-fork-the-repository)
   - [3.2 Clone Your Fork Locally](#32-clone-your-fork-locally)
+  - [3.3 Initialize Claude Code](#33-initialize-claude-code)
 - [4. Session 1 Verification](#4-session-1-verification)
 - [Common Issues](#common-issues)
 - [What's Next](#whats-next)
@@ -463,6 +464,35 @@ Cloning downloads the repository to your computer. Cursor has a built-in feature
 
 ---
 
+### 3.3 Initialize Claude Code
+
+Now that you have the repository open in Cursor, let's initialize Claude Code so it understands the project.
+
+**Steps:**
+
+1. Open the terminal in Cursor (Terminal → New Terminal)
+2. Start Claude Code:
+   ```bash
+   claude
+   ```
+3. Once Claude Code starts, run the `/init` command:
+   ```
+   /init
+   ```
+4. Claude Code will analyze the repository and create a `CLAUDE.md` file
+5. When it's done, open `CLAUDE.md` in Cursor to preview it
+
+**Take a moment to read the `CLAUDE.md` file.** This file helps Claude Code understand:
+- What the project is about
+- The structure of the codebase
+- How to work with the project effectively
+
+This is your first look at the tutorial repository. You'll learn more about each part in Session 2.
+
+**Checkpoint:** You have a `CLAUDE.md` file in your repository and understand the project's purpose.
+
+---
+
 ## 4. Session 1 Verification
 
 Before finishing Session 1, verify everything is set up correctly:
@@ -496,6 +526,7 @@ claude --version
 - [ ] Tutorial repo is forked to your GitHub account
 - [ ] Repo is cloned locally and open in Cursor
 - [ ] Can see files in Cursor's file explorer
+- [ ] `CLAUDE.md` file exists and you've read it
 
 ### Jira
 - [ ] ECOM project exists in Jira
