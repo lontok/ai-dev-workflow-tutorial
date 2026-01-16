@@ -42,9 +42,9 @@ data/sales-data.csv      # Source data (already exists)
 
 **CRITICAL**: No user story work can begin until data loading is functional
 
-- [ ] T003 [US1] Implement `load_data()` function with `@st.cache_data` decorator in `app.py`
-- [ ] T004 [US1] Add date column parsing in `load_data()` function in `app.py`
-- [ ] T005 [US1] Add error handling for missing CSV file with `st.error()` message in `app.py`
+- [x] T003 [US1] Implement `load_data()` function with `@st.cache_data` decorator in `app.py`
+- [x] T004 [US1] Add date column parsing in `load_data()` function in `app.py`
+- [x] T005 [US1] Add error handling for missing CSV file with `st.error()` message in `app.py`
 
 **Checkpoint**: Dashboard loads data from `data/sales-data.csv` and displays without errors
 
