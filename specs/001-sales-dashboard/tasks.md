@@ -112,11 +112,11 @@ data/sales-data.csv      # Source data (already exists)
 
 ### Implementation for User Story 4
 
-- [ ] T021 [P] [US4] Aggregate sales by region using `df.groupby('region')['total_amount'].sum()` in `app.py`
-- [ ] T022 [US4] Sort region data descending by sales value in `app.py`
-- [ ] T023 [US4] Create Plotly horizontal bar chart for region breakdown in `app.py`
-- [ ] T024 [US4] Configure hover template to show exact sales value for each region in `app.py`
-- [ ] T025 [US4] Create side-by-side layout with category chart using `st.columns(2)` in `app.py`
+- [x] T021 [P] [US4] Aggregate sales by region using `df.groupby('region')['total_amount'].sum()` in `app.py`
+- [x] T022 [US4] Sort region data descending by sales value in `app.py`
+- [x] T023 [US4] Create Plotly horizontal bar chart for region breakdown in `app.py`
+- [x] T024 [US4] Configure hover template to show exact sales value for each region in `app.py`
+- [x] T025 [US4] Create side-by-side layout with category chart using `st.columns(2)` in `app.py`
 
 **Checkpoint**: Region bar chart shows all 4 regions sorted by value, displayed alongside category chart (FR-005, FR-010, SC-004)
 

@@ -60,23 +60,37 @@ if df is not None:
     # Display chart
     st.plotly_chart(fig, use_container_width=True)
 
-    # Sales by Category (T016-T020)
-    # Aggregate and sort sales by category
-    category_sales = df.groupby("category")["total_amount"].sum().sort_values(ascending=True)
+    # Sales by Category and Region - Side by Side (T016-T025)
+    chart_col1, chart_col2 = st.columns(2)
 
-    # Create Plotly horizontal bar chart
-    fig_category = px.bar(
-        x=category_sales.values,
-        y=category_sales.index,
-        orientation="h",
-        title="Sales by Category",
-        labels={"x": "Sales ($)", "y": "Category"},
-    )
+    with chart_col1:
+        # Sales by Category (T016-T020)
+        category_sales = df.groupby("category")["total_amount"].sum().sort_values(ascending=True)
 
-    # Configure hover template
-    fig_category.update_traces(
-        hovertemplate="<b>%{y}</b><br>Sales: $%{x:,.2f}<extra></extra>"
-    )
+        fig_category = px.bar(
+            x=category_sales.values,
+            y=category_sales.index,
+            orientation="h",
+            title="Sales by Category",
+            labels={"x": "Sales ($)", "y": "Category"},
+        )
+        fig_category.update_traces(
+            hovertemplate="<b>%{y}</b><br>Sales: $%{x:,.2f}<extra></extra>"
+        )
+        st.plotly_chart(fig_category, use_container_width=True)
 
-    # Display chart
-    st.plotly_chart(fig_category, use_container_width=True)
+    with chart_col2:
+        # Sales by Region (T021-T025)
+        region_sales = df.groupby("region")["total_amount"].sum().sort_values(ascending=True)
+
+        fig_region = px.bar(
+            x=region_sales.values,
+            y=region_sales.index,
+            orientation="h",
+            title="Sales by Region",
+            labels={"x": "Sales ($)", "y": "Region"},
+        )
+        fig_region.update_traces(
+            hovertemplate="<b>%{y}</b><br>Sales: $%{x:,.2f}<extra></extra>"
+        )
+        st.plotly_chart(fig_region, use_container_width=True)
