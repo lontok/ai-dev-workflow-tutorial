@@ -26,4 +26,13 @@ def load_data() -> pd.DataFrame | None:
 df = load_data()
 
 if df is not None:
-    st.success(f"Loaded {len(df)} records successfully.")
+    # Calculate KPIs (T006, T007)
+    total_sales = df["total_amount"].sum()
+    total_orders = len(df)
+
+    # Display KPI metrics in two columns (T008, T009, T010)
+    col1, col2 = st.columns(2)
+    with col1:
+        st.metric(label="Total Sales", value=f"${total_sales:,.2f}")
+    with col2:
+        st.metric(label="Total Orders", value=f"{total_orders:,}")

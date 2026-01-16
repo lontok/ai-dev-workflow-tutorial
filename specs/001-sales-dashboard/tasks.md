@@ -58,11 +58,11 @@ data/sales-data.csv      # Source data (already exists)
 
 ### Implementation for User Story 1
 
-- [ ] T006 [US1] Calculate Total Sales as sum of `total_amount` column in `app.py`
-- [ ] T007 [US1] Calculate Total Orders as count of rows in `app.py`
-- [ ] T008 [US1] Create two-column layout using `st.columns(2)` in `app.py`
-- [ ] T009 [US1] Display Total Sales using `st.metric()` with currency formatting (${:,.2f}) in `app.py`
-- [ ] T010 [US1] Display Total Orders using `st.metric()` with number formatting in `app.py`
+- [x] T006 [US1] Calculate Total Sales as sum of `total_amount` column in `app.py`
+- [x] T007 [US1] Calculate Total Orders as count of rows in `app.py`
+- [x] T008 [US1] Create two-column layout using `st.columns(2)` in `app.py`
+- [x] T009 [US1] Display Total Sales using `st.metric()` with currency formatting (${:,.2f}) in `app.py`
+- [x] T010 [US1] Display Total Orders using `st.metric()` with number formatting in `app.py`
 
 **Checkpoint**: KPI cards display at top of dashboard with correct values and formatting (FR-001, FR-002, SC-001)
 
