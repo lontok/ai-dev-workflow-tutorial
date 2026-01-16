@@ -76,11 +76,11 @@ data/sales-data.csv      # Source data (already exists)
 
 ### Implementation for User Story 2
 
-- [ ] T011 [US2] Aggregate sales by month using `df.groupby(df['date'].dt.to_period('M'))` in `app.py`
-- [ ] T012 [US2] Create Plotly line chart with month on X-axis and sales amount on Y-axis in `app.py`
-- [ ] T013 [US2] Configure hover template to show exact sales value for each month in `app.py`
-- [ ] T014 [US2] Add clear axis labels and chart title in `app.py`
-- [ ] T015 [US2] Display chart using `st.plotly_chart()` with `use_container_width=True` in `app.py`
+- [x] T011 [US2] Aggregate sales by month using `df.groupby(df['date'].dt.to_period('M'))` in `app.py`
+- [x] T012 [US2] Create Plotly line chart with month on X-axis and sales amount on Y-axis in `app.py`
+- [x] T013 [US2] Configure hover template to show exact sales value for each month in `app.py`
+- [x] T014 [US2] Add clear axis labels and chart title in `app.py`
+- [x] T015 [US2] Display chart using `st.plotly_chart()` with `use_container_width=True` in `app.py`
 
 **Checkpoint**: Line chart shows 12-month trend with interactive tooltips (FR-003, FR-006, SC-002)
 
