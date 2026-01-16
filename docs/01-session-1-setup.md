@@ -309,7 +309,10 @@ If you see Python 3.11 or higher (e.g., `Python 3.11.5`), skip to the next secti
 3. Open the downloaded `.pkg` file
 4. Follow the installation wizard
 5. **Important:** On the final screen, click **Install Certificates** if that option appears
-6. Close and reopen Cursor's terminal
+6. Open a new terminal (Terminal → New Terminal)
+
+   > **Why a new terminal?** When you install a tool, it updates your system's PATH (the list of places your computer looks for programs). An already-open terminal doesn't see these changes — opening a new terminal loads the updated PATH.
+
 7. Verify: `python3 --version`
 
 **Install Python on Windows:**
@@ -320,8 +323,8 @@ If you see Python 3.11 or higher (e.g., `Python 3.11.5`), skip to the next secti
 4. **Critical:** Check the box that says **"Add Python to PATH"** at the bottom of the first screen
 5. Click **Install Now**
 6. Complete installation
-7. Restart Cursor
-8. Open terminal and verify: `python --version`
+7. Open a new terminal (Terminal → New Terminal)
+8. Verify: `python --version`
 
 **Checkpoint:** Running `python --version` (Windows) or `python3 --version` (macOS) shows Python 3.11 or higher.
 
@@ -337,7 +340,7 @@ uv is a fast Python package manager that spec-kit requires.
 curl -LsSf https://astral.sh/uv/install.sh | sh
 ```
 
-After installation, close and reopen the terminal (Terminal → New Terminal).
+After installation, open a new terminal (Terminal → New Terminal).
 
 **Install uv on Windows:**
 
@@ -345,7 +348,7 @@ After installation, close and reopen the terminal (Terminal → New Terminal).
 powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
 ```
 
-After installation, restart Cursor.
+After installation, open a new terminal (Terminal → New Terminal).
 
 **Verify installation (both platforms):**
 
@@ -537,12 +540,9 @@ claude --version
 
 ### "Command not found" after installation
 
-**Cause:** The terminal doesn't know where to find the new program.
+**Cause:** The terminal's PATH hasn't been updated to include the new program.
 
-**Fix:**
-- Close and reopen the terminal (or restart Cursor)
-- On macOS, try running `source ~/.zshrc` or `source ~/.bashrc`
-- On Windows, restart Cursor completely
+**Fix:** Open a new terminal (Terminal → New Terminal). If that doesn't work, restart Cursor completely.
 
 ### Git asks for username/password on every operation
 
