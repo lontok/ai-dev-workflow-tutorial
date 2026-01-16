@@ -94,11 +94,11 @@ data/sales-data.csv      # Source data (already exists)
 
 ### Implementation for User Story 3
 
-- [ ] T016 [US3] Aggregate sales by category using `df.groupby('category')['total_amount'].sum()` in `app.py`
-- [ ] T017 [US3] Sort category data descending by sales value in `app.py`
-- [ ] T018 [US3] Create Plotly horizontal bar chart for category breakdown in `app.py`
-- [ ] T019 [US3] Configure hover template to show exact sales value for each category in `app.py`
-- [ ] T020 [US3] Add clear labels and chart title in `app.py`
+- [x] T016 [US3] Aggregate sales by category using `df.groupby('category')['total_amount'].sum()` in `app.py`
+- [x] T017 [US3] Sort category data descending by sales value in `app.py`
+- [x] T018 [US3] Create Plotly horizontal bar chart for category breakdown in `app.py`
+- [x] T019 [US3] Configure hover template to show exact sales value for each category in `app.py`
+- [x] T020 [US3] Add clear labels and chart title in `app.py`
 
 **Checkpoint**: Category bar chart shows all 5 categories sorted by value with tooltips (FR-004, FR-009, SC-003)
 

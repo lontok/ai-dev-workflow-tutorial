@@ -59,3 +59,24 @@ if df is not None:
 
     # Display chart
     st.plotly_chart(fig, use_container_width=True)
+
+    # Sales by Category (T016-T020)
+    # Aggregate and sort sales by category
+    category_sales = df.groupby("category")["total_amount"].sum().sort_values(ascending=True)
+
+    # Create Plotly horizontal bar chart
+    fig_category = px.bar(
+        x=category_sales.values,
+        y=category_sales.index,
+        orientation="h",
+        title="Sales by Category",
+        labels={"x": "Sales ($)", "y": "Category"},
+    )
+
+    # Configure hover template
+    fig_category.update_traces(
+        hovertemplate="<b>%{y}</b><br>Sales: $%{x:,.2f}<extra></extra>"
+    )
+
+    # Display chart
+    st.plotly_chart(fig_category, use_container_width=True)
