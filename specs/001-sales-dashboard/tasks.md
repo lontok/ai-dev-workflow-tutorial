@@ -130,7 +130,7 @@ data/sales-data.csv      # Source data (already exists)
 
 ### Implementation for User Story 5
 
-- [ ] T026 [US5] Verify all code is committed to GitHub repository
+- [x] T026 [US5] Verify all code is committed to GitHub repository
 - [ ] T027 [US5] Connect repository to Streamlit Community Cloud
 - [ ] T028 [US5] Deploy application and obtain public URL
 - [ ] T029 [US5] Test dashboard in Chrome, Firefox, Safari, and Edge browsers
