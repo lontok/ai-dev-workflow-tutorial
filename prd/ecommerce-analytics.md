@@ -150,6 +150,10 @@ An automated, self-service analytics platform that provides immediate access to 
 - Works in modern web browsers (Chrome, Firefox, Safari, Edge)
 - No special plugins or installations required for end users
 
+**NFR-5: Deployment**
+- Dashboard must be deployable to Streamlit Community Cloud
+- Publicly accessible via shareable URL for stakeholder review
+
 ---
 
 ## Data Specification
