@@ -131,9 +131,9 @@ data/sales-data.csv      # Source data (already exists)
 ### Implementation for User Story 5
 
 - [x] T026 [US5] Verify all code is committed to GitHub repository
-- [ ] T027 [US5] Connect repository to Streamlit Community Cloud
-- [ ] T028 [US5] Deploy application and obtain public URL
-- [ ] T029 [US5] Test dashboard in Chrome, Firefox, Safari, and Edge browsers
+- [x] T027 [US5] Connect repository to Streamlit Community Cloud
+- [x] T028 [US5] Deploy application and obtain public URL
+- [x] T029 [US5] Test dashboard in Chrome, Firefox, Safari, and Edge browsers
 
 **Checkpoint**: Dashboard accessible via public URL, all features work in multiple browsers (FR-013, FR-014, SC-009, SC-010)
 
