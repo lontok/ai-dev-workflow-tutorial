@@ -472,24 +472,24 @@ This integration connects your GitHub commits to Jira issues, providing full tra
 
 **Steps:**
 
-1. In Jira, click the **gear icon** (⚙️) in the top right for Settings
-2. Select **Apps** from the dropdown
+1. In Jira, click the **gear icon** (⚙️) in the top right
+2. Under "Jira admin settings", click **Marketplace apps**
 3. Click **Find new apps**
 4. Search for "GitHub for Jira"
 5. Find the official **GitHub for Jira** app by Atlassian
-6. Click **Get app** or **Install**
-7. Follow the authorization flow:
-   - You will be redirected to GitHub
-   - Select your GitHub account
-   - Select the repositories to connect (choose your forked tutorial repo)
-   - Click **Install & Authorize**
-8. Return to Jira and verify the app is installed
+6. Click **Get app**, then **Get it now**
+7. After installation, click **Get started**
+8. Click **Connect GitHub organization**
+9. Select **GitHub Cloud**
+10. You will be redirected to GitHub — authorize access
+11. Select the repositories to connect (choose your forked tutorial repo)
+12. Click **Install & Authorize**
 
 **Verify the connection:**
 
-1. In Jira, go to **Apps** → **Manage apps**
-2. Find GitHub for Jira
-3. Click **Get started** or **Configure**
+1. Return to Jira
+2. Click **gear icon** (⚙️) → **Jira apps**
+3. Find GitHub for Jira and click **Configure**
 4. You should see your GitHub account and repository listed
 
 **Checkpoint:** The GitHub for Jira app shows your repository as connected.
