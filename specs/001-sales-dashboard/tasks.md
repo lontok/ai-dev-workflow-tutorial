@@ -29,8 +29,8 @@ data/sales-data.csv      # Source data (already exists)
 
 **Purpose**: Project initialization and dependency management
 
-- [ ] T001 Create `requirements.txt` with streamlit>=1.28.0, pandas>=2.0.0, plotly>=5.18.0
-- [ ] T002 Create `app.py` with basic Streamlit page configuration (title: "ShopSmart Sales Dashboard", wide layout)
+- [x] T001 Create `requirements.txt` with streamlit>=1.28.0, pandas>=2.0.0, plotly>=5.18.0
+- [x] T002 Create `app.py` with basic Streamlit page configuration (title: "ShopSmart Sales Dashboard", wide layout)
 
 **Checkpoint**: Project structure ready, `streamlit run app.py` launches without errors
 
